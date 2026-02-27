@@ -1,5 +1,26 @@
+/* variables */
+
 :root {
   --color-acent: #273488;
+
+  --page-max-width: 1470px;
+  --page-gutter: 15px;
+}
+
+/* global */
+
+.page-width,
+.container,
+.section,
+main,
+.header-wrapper,
+.footer {
+  max-width: var(--page-max-width);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
 }
 
 /* custom-top-bar */
