@@ -1,0 +1,113 @@
+{% if localization.available_languages.size > 1 %}
+    {% liquid
+        assign current_code = localization.language.iso_code | downcase
+
+        case current_code
+            when 'en'
+                assign current_flag = '🇬🇧'
+            when 'es'
+                assign current_flag = '🇪🇸'
+            when 'fr'
+                assign current_flag = '🇫🇷'
+            when 'de'
+                assign current_flag = '🇩🇪'
+            when 'it'
+                assign current_flag = '🇮🇹'
+            when 'nl'
+                assign current_flag = '🇳🇱'
+            when 'pt'
+                assign current_flag = '🇵🇹'
+            when 'ru'
+                assign current_flag = '🇷🇺'
+            when 'pl'
+                assign current_flag = '🇵🇱'
+            when 'cs'
+                assign current_flag = '🇨🇿'
+            when 'sv'
+                assign current_flag = '🇸🇪'
+            when 'da'
+                assign current_flag = '🇩🇰'
+            else
+                assign current_flag = ''
+        endcase
+    %}
+
+    {% form 'localization', id: 'language-selector-form', class: 'language-selector' %}
+        <div class="lang-dropdown" data-lang-dropdown>
+            <button
+                    type="button"
+                    class="lang-dropdown__button"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                    data-lang-dropdown-button
+            >
+                <span class="lang-dropdown__flag" aria-hidden="true" data-lang-dropdown-flag>{{ current_flag }}</span>
+                <span class="lang-dropdown__value" data-lang-dropdown-value>{{ localization.language.name }}</span>
+                <span class="lang-dropdown__caret" aria-hidden="true">▾</span>
+            </button>
+
+            <ul class="lang-dropdown__list" role="listbox" hidden data-lang-dropdown-list>
+                {% for language in localization.available_languages %}
+                    {% liquid
+                        assign code = language.iso_code | downcase
+
+                        case code
+                            when 'en'
+                                assign flag = '🇬🇧'
+                            when 'es'
+                                assign flag = '🇪🇸'
+                            when 'fr'
+                                assign flag = '🇫🇷'
+                            when 'de'
+                                assign flag = '🇩🇪'
+                            when 'it'
+                                assign flag = '🇮🇹'
+                            when 'nl'
+                                assign flag = '🇳🇱'
+                            when 'pt'
+                                assign flag = '🇵🇹'
+                            when 'ru'
+                                assign flag = '🇷🇺'
+                            when 'pl'
+                                assign flag = '🇵🇱'
+                            when 'cs'
+                                assign flag = '🇨🇿'
+                            when 'sv'
+                                assign flag = '🇸🇪'
+                            when 'da'
+                                assign flag = '🇩🇰'
+                            else
+                                assign flag = ''
+                        endcase
+                    %}
+
+                    <li
+                            class="lang-dropdown__option"
+                            role="option"
+                            tabindex="-1"
+                            data-lang-value="{{ language.iso_code }}"
+                            data-flag-emoji="{{ flag }}"
+                            aria-selected="{% if language.iso_code == localization.language.iso_code %}true{% else %}false{% endif %}"
+                    >
+                        <span class="lang-dropdown__flag" aria-hidden="true">{{ flag }}</span>
+                        <span class="lang-dropdown__label">{{ language.name }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <select
+                    name="language_code"
+                    id="language-selector"
+                    class="lang-dropdown__native"
+                    aria-hidden="true"
+                    tabindex="-1"
+            >
+                {% for language in localization.available_languages %}
+                    <option value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}selected{% endif %}>
+                        {{ language.name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+    {% endform %}
+{% endif %}
