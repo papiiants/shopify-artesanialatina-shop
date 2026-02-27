@@ -69,22 +69,7 @@
     </div>
 
     <div class="custom-top-bar__services">
-        Profesional |
-        {% if localization.available_languages.size > 1 %}
-            {% form 'localization', id: 'language-selector-form', class: 'language-selector' %}
-                <select name="language_code" id="language-selector" onchange="this.form.submit()">
-                    {% for language in localization.available_languages %}
-                        <option
-                            value="{{ language.iso_code }}"
-                            {% if language.iso_code == localization.language.iso_code %}selected{% endif %}
-                            data-flag="{{ language.iso_code | upcase }}"
-                        >
-                        {{ language.name }}
-                        </option>
-                    {% endfor %}
-                </select>
-            {% endform %}
-        {% endif %}
-        {% include 'gtranslate' %}
+        Profesional
+        {% render 'lang-switcher' %}
     </div>
 </div>
