@@ -81,66 +81,34 @@
     "variant_button_width": "equal-width-buttons",
     "content_for_index": [],
     "blocks": {
-      "10008203421340698720": {
-        "type": "shopify://apps/g-translate-shop-translator/blocks/dropdown/408a74ac-f92d-43cf-a1b1-a044341e66bd",
-        "disabled": true,
-        "settings": {
-          "horizontal_position": "left",
-          "vertical_position": "bottom",
-          "select_language_label": "Select Language",
-          "native_language_names": true,
-          "wrapper_selector": "",
-          "custom_css": ""
-        }
-      },
-      "14631529263461341981": {
-        "type": "shopify://apps/g-translate-shop-translator/blocks/flags_dropdown/408a74ac-f92d-43cf-a1b1-a044341e66bd",
-        "disabled": true,
-        "settings": {
-          "horizontal_position": "left",
-          "vertical_position": "bottom",
-          "native_language_names": true,
-          "add_new_line": true,
-          "flag_size": "32",
-          "flag_style": "2d",
-          "wrapper_selector": "",
-          "custom_css": ""
-        }
-      },
-      "3188416721648828243": {
-        "type": "shopify://apps/g-translate-shop-translator/blocks/flags_code/408a74ac-f92d-43cf-a1b1-a044341e66bd",
-        "disabled": true,
-        "settings": {
-          "horizontal_position": "left",
-          "vertical_position": "bottom",
-          "native_language_names": true,
-          "flag_size": "32",
-          "flag_style": "2d",
-          "wrapper_selector": "",
-          "custom_css": ""
-        }
-      },
-      "11354984448963461329": {
-        "type": "shopify://apps/g-translate-shop-translator/blocks/dropdown_with_flags/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+      "8765772171712610185": {
+        "type": "shopify://apps/t-lab-ai-language-translate/blocks/language_switcher/b5b83690-efd4-434d-8c6a-a5cef4019faf",
         "disabled": false,
         "settings": {
-          "horizontal_position": "left",
-          "vertical_position": "bottom",
-          "open_direction": "bottom",
-          "native_language_names": true,
-          "flag_size": "16",
-          "flag_style": "2d",
-          "switcher_text_color": "#666666",
-          "switcher_arrow_color": "#666666",
-          "switcher_border_color": "#cccccc",
-          "switcher_background_color": "#ffffff",
-          "switcher_background_shadow_color": "#efefef",
-          "switcher_background_hover_color": "#ffffff",
-          "dropdown_text_color": "#000000",
-          "dropdown_hover_color": "#ffffff",
-          "dropdown_background_color": "#eeeeee",
-          "wrapper_selector": "",
-          "custom_css": ""
+          "enable_language_switcher": true,
+          "enable_country_region_switcher": false,
+          "use_currency_for_region": false,
+          "switcher_position": "custom",
+          "show_flags": true,
+          "switcher_appearance": "language-code",
+          "invert_switcher_icon_colors": false,
+          "dropdown_appearance": "language-name",
+          "use_modal_dialog": false,
+          "language_country_mapping": "",
+          "countries_filter": "",
+          "custom_css": "",
+          "header_switcher_reference_element": "",
+          "header_switcher_relative_position": "before",
+          "mobile_menu_switcher_reference_element": "",
+          "mobile_switcher_relative_position": "before",
+          "header_switcher_border_width": 0,
+          "switcher_viewport_position": "top-right",
+          "custom_position_spacing": "55,20,20,20",
+          "custom_switcher_font_size": "14px",
+          "custom_switcher_border_width": 1,
+          "custom_switcher_text_color": "#5c5c5c",
+          "custom_switcher_background_color": "#ffffff",
+          "custom_switcher_border_color": "#000000"
         }
       }
     },
