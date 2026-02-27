@@ -8,21 +8,12 @@
   background: transparent;
   color: #ffffff;
   border: none;
-  font-size: 14px;
-  padding-right: 20px;
-  cursor: pointer;
-  appearance: none;
-}
-
-.language-selector .dropdown-arrow {
-  position: absolute;
-  right: 0;
-  pointer-events: none;
   font-size: 12px;
-}
+  cursor: pointer;
 
-.language-selector select option {
-  position: relative;
+  &:focus {
+    outline: none;
+  }
 }
 
 .language-selector select option[data-flag="ES"]::before { content: "🇪🇸 "; }
