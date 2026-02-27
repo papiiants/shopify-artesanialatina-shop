@@ -38,6 +38,7 @@
     {{ content_for_header }}
 
     {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-scripts.js' | asset_url | script_tag }}
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
