@@ -1,0 +1,45 @@
+.language-selector {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.language-selector select {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  padding-right: 20px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.language-selector .dropdown-arrow {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  font-size: 12px;
+}
+
+.language-selector select option {
+  position: relative;
+}
+
+.language-selector select option[data-flag="ES"]::before { content: "🇪🇸 "; }
+.language-selector select option[data-flag="GB"]::before { content: "🇬🇧 "; }
+.language-selector select option[data-flag="US"]::before { content: "🇺🇸 "; }
+.language-selector select option[data-flag="FR"]::before { content: "🇫🇷 "; }
+.language-selector select option[data-flag="DE"]::before { content: "🇩🇪 "; }
+.language-selector select option[data-flag="IT"]::before { content: "🇮🇹 "; }
+.language-selector select option[data-flag="NL"]::before { content: "🇳🇱 "; }
+.language-selector select option[data-flag="PT"]::before { content: "🇵🇹 "; }
+.language-selector select option[data-flag="RU"]::before { content: "🇷🇺 "; }
+.language-selector select option[data-flag="PL"]::before { content: "🇵🇱 "; }
+.language-selector select option[data-flag="CZ"]::before { content: "🇨🇿 "; }
+.language-selector select option[data-flag="SE"]::before { content: "🇸🇪 "; }
+.language-selector select option[data-flag="DK"]::before { content: "🇩🇰 "; }
+
+.language-selector select::before {
+  content: attr(data-flag);
+  margin-right: 6px;
+}
