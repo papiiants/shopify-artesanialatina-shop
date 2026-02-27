@@ -18,21 +18,22 @@
   }
 }
 
-.language-selector select option[data-flag="ES"]::before { content: "🇪🇸 "; }
-.language-selector select option[data-flag="GB"]::before { content: "🇬🇧 "; }
-.language-selector select option[data-flag="US"]::before { content: "🇺🇸 "; }
-.language-selector select option[data-flag="FR"]::before { content: "🇫🇷 "; }
-.language-selector select option[data-flag="DE"]::before { content: "🇩🇪 "; }
-.language-selector select option[data-flag="IT"]::before { content: "🇮🇹 "; }
-.language-selector select option[data-flag="NL"]::before { content: "🇳🇱 "; }
-.language-selector select option[data-flag="PT"]::before { content: "🇵🇹 "; }
-.language-selector select option[data-flag="RU"]::before { content: "🇷🇺 "; }
-.language-selector select option[data-flag="PL"]::before { content: "🇵🇱 "; }
-.language-selector select option[data-flag="CZ"]::before { content: "🇨🇿 "; }
-.language-selector select option[data-flag="SE"]::before { content: "🇸🇪 "; }
-.language-selector select option[data-flag="DK"]::before { content: "🇩🇰 "; }
+.language-selector select option[data-flag="ES"]::before { content: "🇪🇸"; }
+.language-selector select option[data-flag="GB"]::before { content: "🇬🇧"; }
+.language-selector select option[data-flag="US"]::before { content: "🇺🇸"; }
+.language-selector select option[data-flag="FR"]::before { content: "🇫🇷"; }
+.language-selector select option[data-flag="DE"]::before { content: "🇩🇪"; }
+.language-selector select option[data-flag="IT"]::before { content: "🇮🇹"; }
+.language-selector select option[data-flag="NL"]::before { content: "🇳🇱"; }
+.language-selector select option[data-flag="PT"]::before { content: "🇵🇹"; }
+.language-selector select option[data-flag="RU"]::before { content: "🇷🇺"; }
+.language-selector select option[data-flag="PL"]::before { content: "🇵🇱"; }
+.language-selector select option[data-flag="CZ"]::before { content: "🇨🇿"; }
+.language-selector select option[data-flag="SE"]::before { content: "🇸🇪"; }
+.language-selector select option[data-flag="DK"]::before { content: "🇩🇰"; }
 
 .language-selector select::before {
   content: attr(data-flag);
-  margin-right: 6px;
+  display: inline-block;
+  margin-right: 4px;
 }
