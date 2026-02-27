@@ -81,6 +81,45 @@
     "variant_button_width": "equal-width-buttons",
     "content_for_index": [],
     "blocks": {
+      "10008203421340698720": {
+        "type": "shopify://apps/g-translate-shop-translator/blocks/dropdown/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "select_language_label": "Select Language",
+          "native_language_names": true,
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "14631529263461341981": {
+        "type": "shopify://apps/g-translate-shop-translator/blocks/flags_dropdown/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "native_language_names": true,
+          "add_new_line": true,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "3188416721648828243": {
+        "type": "shopify://apps/g-translate-shop-translator/blocks/flags_code/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "native_language_names": true,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
       "11354984448963461329": {
         "type": "shopify://apps/g-translate-shop-translator/blocks/dropdown_with_flags/408a74ac-f92d-43cf-a1b1-a044341e66bd",
         "disabled": false,
@@ -89,7 +128,7 @@
           "vertical_position": "bottom",
           "open_direction": "bottom",
           "native_language_names": true,
-          "flag_size": "32",
+          "flag_size": "16",
           "flag_style": "2d",
           "switcher_text_color": "#666666",
           "switcher_arrow_color": "#666666",
@@ -100,18 +139,6 @@
           "dropdown_text_color": "#000000",
           "dropdown_hover_color": "#ffffff",
           "dropdown_background_color": "#eeeeee",
-          "wrapper_selector": "",
-          "custom_css": ""
-        }
-      },
-      "10008203421340698720": {
-        "type": "shopify://apps/g-translate-shop-translator/blocks/dropdown/408a74ac-f92d-43cf-a1b1-a044341e66bd",
-        "disabled": true,
-        "settings": {
-          "horizontal_position": "left",
-          "vertical_position": "bottom",
-          "select_language_label": "Select Language",
-          "native_language_names": true,
           "wrapper_selector": "",
           "custom_css": ""
         }
