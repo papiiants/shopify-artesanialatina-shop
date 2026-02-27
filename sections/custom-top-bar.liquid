@@ -54,6 +54,48 @@
         height: 15px;
         margin-right: 2px;
     }
+
+    .language-selector {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .language-selector select {
+        background: transparent;
+        color: #ffffff;
+        border: none;
+        font-size: 14px;
+        padding: 0 20px 0 0;
+        cursor: pointer;
+        appearance: none;
+    }
+
+    .language-selector .dropdown-arrow {
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+        font-size: 12px;
+    }
+
+    .language-selector select option[data-flag="ES"]::before { content: "🇪🇸 "; }
+    .language-selector select option[data-flag="GB"]::before { content: "🇬🇧 "; }
+    .language-selector select option[data-flag="US"]::before { content: "🇺🇸 "; }
+    .language-selector select option[data-flag="FR"]::before { content: "🇫🇷 "; }
+    .language-selector select option[data-flag="DE"]::before { content: "🇩🇪 "; }
+    .language-selector select option[data-flag="IT"]::before { content: "🇮🇹 "; }
+    .language-selector select option[data-flag="NL"]::before { content: "🇳🇱 "; }
+    .language-selector select option[data-flag="PT"]::before { content: "🇵🇹 "; }
+    .language-selector select option[data-flag="RU"]::before { content: "🇷🇺 "; }
+    .language-selector select option[data-flag="PL"]::before { content: "🇵🇱 "; }
+    .language-selector select option[data-flag="CZ"]::before { content: "🇨🇿 "; }
+    .language-selector select option[data-flag="SE"]::before { content: "🇸🇪 "; }
+    .language-selector select option[data-flag="DK"]::before { content: "🇩🇰 "; }
+
+    .language-selector select::before {
+        content: attr(data-flag);
+        margin-right: 6px;
+    }
 {% endstyle %}
 
 <div class="custom-top-bar color-{{ section.settings.color_scheme }}">
@@ -70,6 +112,22 @@
 
     <div class="custom-top-bar__services">
         Profesional |
+        {% if localization.available_languages.size > 1 %}
+            {% form 'localization', id: 'language-selector-form', class: 'language-selector' %}
+                <select name="language_code" id="language-selector" onchange="this.form.submit()">
+                    {% for language in localization.available_languages %}
+                        <option
+                                value="{{ language.iso_code }}"
+                                {% if language.iso_code == localization.language.iso_code %}selected{% endif %}
+                                data-flag="{{ language.iso_code | upcase }}"
+                        >
+                        {{ language.name }}
+                        </option>
+                    {% endfor %}
+                </select>
+                <span class="dropdown-arrow">▼</span>
+            {% endform %}
+        {% endif %}
         {% include 'gtranslate' %}
     </div>
 </div>
