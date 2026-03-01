@@ -81,6 +81,8 @@
     "variant_button_border_width": 1,
     "variant_button_radius": 14,
     "variant_button_width": "equal-width-buttons",
+    "swym_advanced_collections_wishlist_enabled": true,
+    "swym_header_icon_enabled": false,
     "content_for_index": [],
     "blocks": {
       "2950567246721570496": {
@@ -114,6 +116,11 @@
       },
       "17723947366685343984": {
         "type": "shopify://apps/wishlist-plus/blocks/storefront-ui-elements/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {}
+      },
+      "11724500921838622758": {
+        "type": "shopify://apps/frequently-bought/blocks/app-embed-block/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
         "disabled": false,
         "settings": {}
       }
@@ -392,9 +399,7 @@
           "selected_variant_hover_border_color": "#1a1a1a"
         }
       }
-    },
-    "swym_advanced_collections_wishlist_enabled": true,
-    "swym_header_icon_enabled": false
+    }
   },
   "presets": {
     "Horizon": {
