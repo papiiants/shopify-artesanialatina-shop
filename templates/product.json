@@ -273,13 +273,18 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "sequra_on_site_messaging_sequra_promotional_widget_f4QzE6": {
+                  "type": "shopify://apps/sequra-on-site-messaging/blocks/sequra_promotional_widget/fecac697-26f8-4375-99bc-822fa16c7544",
+                  "settings": {}
                 }
               },
               "block_order": [
                 "text_xrnftG",
                 "group_N74Ldr",
                 "price_tVjtKg",
-                "text_wAKpB6"
+                "text_wAKpB6",
+                "sequra_on_site_messaging_sequra_promotional_widget_f4QzE6"
               ]
             },
             "divider_VJhene": {
