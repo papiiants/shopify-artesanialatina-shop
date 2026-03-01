@@ -31,6 +31,9 @@
       "block_order": [
         "button_H9gpTf"
       ],
+      "custom_css": [
+        ".button {width: 375px; font-size: 15px; text-transform: uppercase; transition: all 0.2s; }"
+      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "video",
