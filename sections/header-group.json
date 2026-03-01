@@ -81,7 +81,7 @@
         "divider_size": "page-width",
         "border_width": 0,
         "actions_display_style": "icon",
-        "actions_font_size": "0.875rem",
+        "actions_font_size": "1rem",
         "actions_font": "body",
         "actions_text_case": "none",
         "color_scheme_top": "scheme-1",
