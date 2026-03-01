@@ -32,7 +32,8 @@
         "button_H9gpTf"
       ],
       "custom_css": [
-        ".button {width: 375px; font-size: 15px; text-transform: uppercase; transition: all 0.3s;}"
+        ".button {width: 375px; font-size: 15px; text-transform: uppercase; transition: all 0.3s;}",
+        ".button:hover {}"
       ],
       "name": "t:names.hero",
       "settings": {
