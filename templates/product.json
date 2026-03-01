@@ -367,6 +367,9 @@
           ]
         }
       },
+      "custom_css": [
+        "h1 {margin-bottom: 10px; font-size: 32px; font-weight: bold;}"
+      ],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
