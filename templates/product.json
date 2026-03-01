@@ -226,8 +226,8 @@
               "type": "shopify://apps/tabs-studio/blocks/product_tabs_block/19980fb9-f2ca-4ada-ad36-c0364c3318b8",
               "settings": {
                 "default_tab": "tab",
-                "start_tab_element": "",
-                "default_tab_title": "Description",
+                "start_tab_element": "h3",
+                "default_tab_title": "Descripción",
                 "layout": "vertical",
                 "layout_breakpoint": 750,
                 "open_first_tab": false,
