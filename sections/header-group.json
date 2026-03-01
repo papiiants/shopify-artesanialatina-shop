@@ -60,7 +60,8 @@
         }
       },
       "custom_css": [
-        ".header[data-sticky-state=\"active\"] {box-shadow: 0 5px 5px rgba(0,0,0,0.6);}"
+        ".header {transition: all .3s;}",
+        ".header[data-sticky-state=\"active\"] {box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);}"
       ],
       "settings": {
         "logo_position": "left",
