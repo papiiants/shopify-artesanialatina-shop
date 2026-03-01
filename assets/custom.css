@@ -9,12 +9,7 @@
 
 /* global */
 
-.page-width,
-.container,
-.section,
-main,
-.header-wrapper,
-.footer {
+.container {
   max-width: var(--page-max-width);
   width: 100%;
   margin-left: auto;

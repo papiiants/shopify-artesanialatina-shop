@@ -28,12 +28,10 @@
     const selectedLi = list.querySelector('[data-lang-value][aria-selected="true"]');
     const selectedOption = nativeSelect.selectedOptions?.[0];
 
-    // Текст в кнопке = полное название языка
     valueEl.textContent = selectedLi?.querySelector('.lang-dropdown__label')?.textContent?.trim()
       || selectedOption?.textContent?.trim()
       || '';
 
-    // Флаг в кнопке
     if (flagEl) {
       const emoji = selectedLi?.dataset.flagEmoji
         || selectedLi?.querySelector('.lang-dropdown__flag')?.textContent?.trim()
@@ -72,7 +70,6 @@
     const { form, button, list, valueEl, nativeSelect } = getEls(root);
     if (!form || !button || !list || !valueEl || !nativeSelect) return;
 
-    // Гарантируем начальное состояние (закрыто)
     setOpen(root, false);
     syncButtonFromSelected(root);
 
@@ -80,8 +77,7 @@
       e.preventDefault();
       e.stopPropagation();
 
-      // Закрыть все остальные, этот — открыть/закрыть
-      const willOpen = list.hidden; // важно: список должен быть hidden, когда закрыт
+      const willOpen = list.hidden;
       closeAll(root);
       setOpen(root, willOpen);
 
@@ -92,7 +88,6 @@
       }
     });
 
-    // Делегирование кликов по пунктам списка
     list.addEventListener('click', (e) => {
       const target = e.target instanceof Element ? e.target : null;
       const li = target?.closest?.('[data-lang-value]');
@@ -104,7 +99,6 @@
       selectValue(root, li.dataset.langValue);
     });
 
-    // Клавиатура внутри списка
     list.addEventListener('keydown', (e) => {
       const target = e.target instanceof Element ? e.target : null;
       const current = target?.closest?.('[data-lang-value]');
@@ -148,7 +142,6 @@
     if (e.key === 'Escape') closeAll(null);
   });
 
-  // Инициализация: обычная загрузка + перерисовки секций Shopify
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initAll);
   } else {
