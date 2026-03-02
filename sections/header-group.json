@@ -22,7 +22,7 @@
       }
     },
     "header_section": {
-      "type": "header",
+      "type": "custom-header",
       "blocks": {
         "header-logo": {
           "type": "_header-logo",
