@@ -189,7 +189,7 @@
       "many": "{{ count }} artículos"
     },
     "errors": "Errores",
-    "search": "Buscar",
+    "search": "¿Qué estás buscando?",
     "search_results_no_results_check_spelling": "No se encontró ningún resultado para \"{{ terms }}\". Revisa la ortografía o usa una palabra o frase diferente.",
     "no_products_found": "No se encontró ningún producto.",
     "price_from": "Desde {{ price }}",

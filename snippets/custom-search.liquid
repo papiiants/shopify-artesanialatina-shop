@@ -14,17 +14,17 @@
     class="search-action{% if display_style == 'text' %} search-action--text{% endif %}{% if class != blank %} {{ class | strip }}{% endif %}"
   >
     <button
+      class="search-action__button"
       on:click="#search-modal/showDialog"
       class="button-unstyled header-actions__action{% if display_style == 'text' %} header-actions__text-style{% endif %}"
       aria-label="{{ 'content.search_input_label' | t }}"
       aria-haspopup="dialog"
     >
-      <span class="{% if display_style == 'icon' %}hidden{% else %}mobile:hidden{% endif %}">
-        {{ 'content.search' | t }}
-      </span>
-
       <span class="svg-wrapper {% if display_style != 'icon' %}desktop:hidden{% endif %}">
         {{ 'icon-custom-search.svg' | inline_asset_content }}
+      </span>
+      <span class="search-action__test">
+        {{ 'content.search' | t }}
       </span>
     </button>
   </search-button>
