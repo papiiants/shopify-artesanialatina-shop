@@ -69,7 +69,7 @@
         "menu_row": "bottom",
         "customer_account_menu": "main-menu",
         "show_search": true,
-        "search_position": "right",
+        "search_position": "left",
         "search_row": "top",
         "show_country": false,
         "country_selector_style": false,
