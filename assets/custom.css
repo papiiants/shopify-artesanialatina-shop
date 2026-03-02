@@ -172,6 +172,36 @@
   }
 }
 
+/* header actions */
+
+header-actions {
+  column-gap: 14px;
+  .header-actions__action,
+  .header-actions__cart-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .header-actions__cart-icon {
+    svg {
+      width: 18px !important;
+      height: 20px !important;
+    }
+  }
+
+  .header-actions__text,
+  .header-actions__cart-icon-text {
+    font-size: 10px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
 /* main-menu */
 
 .menu-list__scroll-container {
