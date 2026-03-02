@@ -174,5 +174,24 @@
 
 /* main-menu */
 
+.header__row {
+  display: flex;
+}
+
+.menu-list__list {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 0;
+
+    .menu-list__link-title {
+      padding-block: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+}
+
 
 
