@@ -174,8 +174,13 @@
 
 /* main-menu */
 
+.menu-list__scroll-container {
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+
 .header__row {
-  display: flex;
+  display: block;
 }
 
 .menu-list__list {
@@ -186,9 +191,18 @@
 
     .menu-list__link-title {
       padding-block: 10px;
+      padding-inline: 15px;
       font-size: 16px;
       font-weight: bold;
       line-height: 1;
+    }
+
+    .menu-list__list-item:last-child {
+      margin-left: 15px;
+      .menu-list__link-title {
+        background-color: #ff0000;
+        color: #fff;
+      }
     }
 
 }
