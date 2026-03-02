@@ -199,7 +199,7 @@
     "price_filter_html": "El precio más alto es {{ price }}",
     "blog_details_separator": "|",
     "read_more": "Leer más...",
-    "account_title": "Cuenta",
+    "account_title": "Iniciar sesión",
     "account_title_personalized": "Hola, {{ first_name }}:",
     "account_orders": "Pedidos",
     "account_profile": "Perfil",
