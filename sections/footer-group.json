@@ -497,7 +497,7 @@
         "section_width": "page-width",
         "gap": 20,
         "color_scheme": "scheme-3",
-        "padding-block-start": 30,
+        "padding-block-start": 40,
         "padding-block-end": 30
       }
     },
@@ -559,8 +559,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 15,
+        "padding-block-end": 15
       }
     },
     "custom_liquid_eWx8Vp": {
