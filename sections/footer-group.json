@@ -60,9 +60,7 @@
         "text_xEeWGY",
         "button_WPdHLn"
       ],
-      "custom_css": [
-        "button {padding: 0;}"
-      ],
+      "custom_css": [],
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "row",
