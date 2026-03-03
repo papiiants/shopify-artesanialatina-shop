@@ -81,7 +81,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2><strong>Suscríbete a nuestra newsletter y disfruta de un 5% de descuento en tu primera compra</strong></h2>",
+                "text": "<h2>Suscríbete a nuestra newsletter y disfruta de un 5% de descuento en tu primera compra</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -140,7 +140,9 @@
         "image_tbQJeR",
         "group_M8DdNe"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h2 {font-weight: 600;}"
+      ],
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "row",
