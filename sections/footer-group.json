@@ -562,11 +562,23 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "custom_liquid_eWx8Vp": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"back-to-top\" class=\"back-to-top\" aria-label=\"Volver arriba\">\n  <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M12 5L12 19M12 5L6 11M12 5L18 11\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  </svg>\n</div>\n\n<style>\n  .back-to-top {\n    position: fixed;\n    bottom: 25px;\n    right: 25px;\n    width: 48px;\n    height: 48px;\n    background: #000;               /* или цвет из твоей темы, например var(--color-background) */\n    color: #fff;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    cursor: pointer;\n    opacity: 0;\n    visibility: hidden;\n    transition: all 0.3s ease;\n    z-index: 999;\n    box-shadow: 0 4px 12px rgba(0,0,0,0.15);\n  }\n\n  .back-to-top.show {\n    opacity: 0.85;\n    visibility: visible;\n  }\n\n  .back-to-top:hover {\n    opacity: 1;\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 749px) {\n    .back-to-top {\n      bottom: 70px;   /* чтобы не перекрывать мобильное меню/корзину */\n      right: 15px;\n      width: 44px;\n      height: 44px;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    const btn = document.getElementById('back-to-top');\n    if (!btn) return;\n\n    window.addEventListener('scroll', () => {\n      if (window.scrollY > 400) {   // появляется после 400px скролла\n        btn.classList.add('show');\n      } else {\n        btn.classList.remove('show');\n      }\n    });\n\n    btn.addEventListener('click', () => {\n      window.scrollTo({ top: 0, behavior: 'smooth' });\n    });\n  });\n</script>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
     "section_BY4r8h",
     "footer_m9NzUG",
-    "section_iEzDVa"
+    "section_iEzDVa",
+    "custom_liquid_eWx8Vp"
   ]
 }
