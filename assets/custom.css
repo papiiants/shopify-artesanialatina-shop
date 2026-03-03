@@ -183,11 +183,17 @@
 
 /* search */
 
+.search-modal__content {
+  margin-top: 60px !important;
+}
+
 search-button {
   width: 100%;
 }
 
 .search-action__button {
+  max-width: 610px;
+  margin-inline: auto;
   .search-action__text {
     display: none;
   }
@@ -196,7 +202,7 @@ search-button {
     align-items: center;
     gap: 10px;
     width: 100%;
-    padding: 15px 14px;
+    padding: 10px 14px;
     background: #f4f6ff;
     color: #273488;
     border: solid 1px #ffffff;
@@ -222,6 +228,7 @@ cart-drawer-component.cart-drawer {
 }
 
 header-actions {
+  margin: 0 !important;
   column-gap: 14px;
   .header-actions__action,
   .header-actions__cart-icon {
@@ -248,8 +255,6 @@ header-actions {
     font-size: 10px;
     font-family: Poppins, sans-serif;
   }
-
-
 
   @media(width < 768px) {
     .header-actions__text,
