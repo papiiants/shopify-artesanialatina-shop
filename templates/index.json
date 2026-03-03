@@ -174,7 +174,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "{{ product.metafields.custom.dificultad.value }}"
+                "custom_liquid": "<div>\n<span>123</span>\n{{ product.metafields.custom.dificultad.value }}\n</div>"
               },
               "blocks": {}
             },
