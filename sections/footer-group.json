@@ -454,7 +454,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<ul><li>Visa</li><li>MasterCard</li><li>Bizum</li><li>Paypal</li><li>Discover</li><li>Klarna</li><li>Paygold</li></ul>",
+                "text": "<ul><li>Visa</li><li>MasterCard</li><li>Bizum</li><li>Paypal</li><li>Discover</li><li>Klarna</li><li>Paygold</li><li>Scalapay</li></ul>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
