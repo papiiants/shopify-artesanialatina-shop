@@ -343,5 +343,21 @@ header-actions {
 
 }
 
+/* section hero */
+
+.hero {
+  min-height: 100vh;
+
+  @media(width < 769px) {
+    min-height: 400px;
+  }
+  @media(width < 570px) {
+    min-height: 300px;
+  }
+  @media(width < 375px) {
+    min-height: 250px;
+  }
+}
+
 
 
