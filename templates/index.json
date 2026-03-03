@@ -79,7 +79,7 @@
             "recommendation_type": "related",
             "layout_type": "carousel",
             "carousel_on_mobile": true,
-            "max_products": 5,
+            "max_products": 10,
             "columns_gap": 16,
             "rows_gap": 16,
             "icons_style": "arrow",
@@ -97,10 +97,10 @@
             "text_6DYzYG": {
               "type": "text",
               "settings": {
-                "text": "<h4>También te puede gustar</h4>",
-                "width": "fit-content",
+                "text": "<h2><strong>Te recomendamos</strong></h2>",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
