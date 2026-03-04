@@ -1084,7 +1084,7 @@
         "video_cwB3iX"
       ],
       "custom_css": [
-        "@media (max-width: 740px) {h1 {font-size: 30px; }}"
+        "@media (max-width: 740px) {h1 {font-size: 30px; } .spacing-style {padding-bottom: 20px; }}"
       ],
       "name": "Constructor",
       "settings": {
