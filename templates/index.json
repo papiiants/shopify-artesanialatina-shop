@@ -1084,7 +1084,7 @@
         "video_cwB3iX"
       ],
       "custom_css": [
-        "@media(min-width: 740px) {h1 {font-size: 30px; }}"
+        "@media (min-width: 740px) {h1 {font-size: 30px; }}"
       ],
       "name": "Constructor",
       "settings": {
