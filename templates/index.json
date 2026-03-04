@@ -1523,12 +1523,7 @@
         "social_links_TDaYDk"
       ],
       "custom_css": [
-        "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}",
-        ".social-icons__icon-wrapper a {display: flex; align-items: center; justify-content: center; width: 49px; height: 49px; padding: 10px; color: #fff; border-radius: 5px;}",
-        ".social-icons__icon-wrapper a:hover {opacity: 0.6;}",
-        ".social-icons__icon-wrapper:first-child a {background-color: #273488;}",
-        ".social-icons__icon-wrapper:last-child a {background-color: #cd201f;}",
-        ".social-icons__icon-wrapper:nth-child(2) a {background-color: #000;}"
+        "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}"
       ],
       "name": "Socials",
       "settings": {
