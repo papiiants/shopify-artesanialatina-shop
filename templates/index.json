@@ -1444,7 +1444,8 @@
         }
       },
       "custom_css": [
-        "h3 {display: none;}"
+        "h3 {display: none;}",
+        ".image-block {height: 200px;}"
       ],
       "name": "t:names.blog_posts_grid",
       "settings": {
