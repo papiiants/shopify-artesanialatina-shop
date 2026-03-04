@@ -889,7 +889,7 @@
       ],
       "custom_css": [
         ".group-block-content {justify-content: space-between;}",
-        "@media (max-width: 740px) {.group-block-content {gap: 20px; } h3 {font-size: 18px; }}"
+        "@media (max-width: 740px) {.group-block-content {gap: 20px; padding: 30px; } h3 {font-size: 18px; }}"
       ],
       "name": "Categories",
       "settings": {
