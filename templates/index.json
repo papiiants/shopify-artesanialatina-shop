@@ -1491,7 +1491,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 30,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -1523,9 +1523,10 @@
         "social_links_TDaYDk"
       ],
       "custom_css": [
-        "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}"
+        "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}",
+        ".social-icons__icon-wrapper {width: 49px; height: 49px; padding: 15px;}"
       ],
-      "name": "t:names.custom_section",
+      "name": "Socials",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
