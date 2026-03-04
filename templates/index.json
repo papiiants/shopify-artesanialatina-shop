@@ -1444,7 +1444,7 @@
         }
       },
       "custom_css": [
-        "h3 {display: none;}",
+        "h3, .blog-post-card__content-text {display: none;}",
         ".image-block {height: 200px; border-radius: 25px 25px 0 0; @media (max-width: 740px) {margin-bottom: 20px; }}",
         ".featured-blog-posts-card__link {background: #f4f6ff; border-radius: 25px;}"
       ],
