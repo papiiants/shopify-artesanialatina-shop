@@ -1524,7 +1524,7 @@
       ],
       "custom_css": [
         "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}",
-        ".social-icons__icon-wrapper {width: 49px; height: 49px; padding: 15px;}"
+        ".social-icons__icon-wrapper {width: 49px; height: 49px; padding: 15px; box-sizing: content-box;}"
       ],
       "name": "Socials",
       "settings": {
