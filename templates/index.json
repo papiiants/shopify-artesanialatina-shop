@@ -1387,22 +1387,22 @@
               "name": "t:names.title",
               "static": true,
               "settings": {
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
+                "font_size": "1.125rem",
+                "line_height": "tight",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "text": "<h4>{{ closest.article.title }}</h4>",
+                "text": "<h4><strong>{{ closest.article.title }}</strong></h4>",
                 "read_only": false,
                 "alignment": "left",
                 "show_alignment": false,
-                "padding-block-start": 0,
+                "padding-block-start": 20,
                 "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
               },
               "blocks": {}
             },
@@ -1411,8 +1411,8 @@
               "name": "t:names.details",
               "static": true,
               "settings": {
-                "show_date": true,
-                "show_author": true,
+                "show_date": false,
+                "show_author": false,
                 "type_preset": "",
                 "alignment": "left",
                 "show_alignment": false,
@@ -1445,7 +1445,7 @@
       },
       "custom_css": [
         "h3 {display: none;}",
-        ".image-block {height: 200px; margin-bottom: 40px; border-radius: 25px 25px 0 0; @media (max-width: 740px) {margin-bottom: 20px; }}",
+        ".image-block {height: 200px; border-radius: 25px 25px 0 0; @media (max-width: 740px) {margin-bottom: 20px; }}",
         ".featured-blog-posts-card__link {background: #f4f6ff; border-radius: 25px;}"
       ],
       "name": "t:names.blog_posts_grid",
