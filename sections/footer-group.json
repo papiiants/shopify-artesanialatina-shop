@@ -653,7 +653,10 @@
         "group_R7zKQU"
       ],
       "custom_css": [
-        "img {width: 100px;}"
+        "img {width: 100px;}",
+        "ul {list-style: none; padding: 0;}",
+        "ul li:not(last-child) {margin-bottom: 5px;}",
+        "ul a {text-decoration: none;}"
       ],
       "name": "t:names.footer",
       "settings": {
@@ -696,6 +699,11 @@
       },
       "block_order": [
         "text_REGEq3"
+      ],
+      "custom_css": [
+        "ul {list-style: none; padding: 0;}",
+        "ul li:not(last-child) {margin-bottom: 5px;}",
+        "ul a {text-decoration: none;}"
       ],
       "name": "Socials",
       "settings": {
