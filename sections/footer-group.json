@@ -141,8 +141,9 @@
         "group_M8DdNe"
       ],
       "custom_css": [
+        "div[data-testid=\"section-content\"] {border-top: 1px solid #273488;}",
         "h2 {font-weight: 600;}",
-        "@media(max-width: 740px) {.group-block {padding: 40px; }}"
+        "@media (max-width: 740px) {.group-block {padding: 40px; }}"
       ],
       "name": "t:names.custom_section",
       "settings": {
