@@ -145,7 +145,7 @@
         "h2 {font-weight: 600;}",
         "@media (max-width: 740px) {.group-block {padding: 40px; }}"
       ],
-      "name": "t:names.custom_section",
+      "name": "Newsletter",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -224,7 +224,7 @@
         "button_WPdHLn"
       ],
       "custom_css": [],
-      "name": "t:names.custom_section",
+      "name": "SeQuera",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": false,
@@ -697,7 +697,7 @@
       "block_order": [
         "text_REGEq3"
       ],
-      "name": "t:names.custom_section",
+      "name": "Socials",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
