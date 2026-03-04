@@ -141,7 +141,8 @@
         "group_M8DdNe"
       ],
       "custom_css": [
-        "h2 {font-weight: 600;}"
+        "h2 {font-weight: 600;}",
+        "@media(max-width: 740px) {.group-block {padding: 40px; }}"
       ],
       "name": "t:names.custom_section",
       "settings": {
