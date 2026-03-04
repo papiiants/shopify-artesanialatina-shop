@@ -170,14 +170,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "custom_liquid_Hntt6L": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
-              "settings": {
-                "custom_liquid": "<div>\n<span>123</span>\n{{ product.metafields.custom.dificultad.value }}\n</div>"
-              },
-              "blocks": {}
-            },
             "product_card_gallery_ME7zBY": {
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
@@ -244,7 +236,6 @@
             }
           },
           "block_order": [
-            "custom_liquid_Hntt6L",
             "product_card_gallery_ME7zBY",
             "product_title_zXwdLQ",
             "price_kFgAcL"
