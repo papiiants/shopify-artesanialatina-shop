@@ -359,5 +359,38 @@ header-actions {
   }
 }
 
+/* socials icon on homepage */
 
+.social-icons__wrapper {
+  width: 140px;
+  justify-content: space-between;
+
+  .social-icons__icon-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 49px;
+    height: 49px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .2s;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .social-icons__icon-wrapper a:hover {
+    opacity: 0.6;
+  }
+  .social-icons__icon-wrapper:first-child a {
+    background-color: #273488;
+  }
+  .social-icons__icon-wrapper:last-child a {
+    background-color: #cd201f;
+  }
+  .social-icons__icon-wrapper:nth-child(2) a {
+    background-color: #000;
+  }
+}
 
