@@ -1055,7 +1055,93 @@
             "group_dBerXR"
           ]
         },
-        "group_RBP8bK": {
+        "video_cwB3iX": {
+          "type": "video",
+          "name": "t:names.video",
+          "settings": {
+            "source": "url",
+            "video_url": "https://www.youtube.com/watch?v=LiQRUHBoF-k&list=TLGG-xd8sCYGiZowNDAzMjAyNg",
+            "video_autoplay": false,
+            "video_loop": true,
+            "alt": "",
+            "custom_width": 49,
+            "custom_width_mobile": 100,
+            "aspect_ratio": "16/9",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_BLYwPb",
+        "video_cwB3iX"
+      ],
+      "custom_css": [
+        "@media (max-width: 740px) {h1 {font-size: 30px; } .spacing-style {padding-bottom: 20px; }}"
+      ],
+      "name": "Constructor",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "full-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_ptc8ax": {
+      "type": "section",
+      "blocks": {
+        "video_rzFKwJ": {
+          "type": "video",
+          "name": "t:names.video",
+          "settings": {
+            "source": "url",
+            "video_url": "https://www.youtube.com/watch?v=Lu-GImpTE8k",
+            "video_autoplay": false,
+            "video_loop": true,
+            "alt": "",
+            "custom_width": 49,
+            "custom_width_mobile": 100,
+            "aspect_ratio": "16/9",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_9HRerj": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -1095,7 +1181,7 @@
             "padding-inline-end": 56
           },
           "blocks": {
-            "group_9EeVdR": {
+            "group_fyMkrD": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -1135,18 +1221,18 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_zDj7zG": {
+                "text_zLUjEU": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h1><strong>Despierta al constructor<br/>que llevas dentro</strong></h1>",
+                    "text": "<h1><strong>Construyendo maquetas<br/>juntos desde 1970</strong></h1>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
+                    "font_size": "2.5rem",
+                    "line_height": "tight",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
@@ -1161,7 +1247,7 @@
                   },
                   "blocks": {}
                 },
-                "button_h8cEyM": {
+                "button_DkTYfC": {
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
@@ -1178,50 +1264,26 @@
                 }
               },
               "block_order": [
-                "text_zDj7zG",
-                "button_h8cEyM"
+                "text_zLUjEU",
+                "button_DkTYfC"
               ]
             }
           },
           "block_order": [
-            "group_9EeVdR"
+            "group_fyMkrD"
           ]
-        },
-        "video_cwB3iX": {
-          "type": "video",
-          "name": "t:names.video",
-          "settings": {
-            "source": "url",
-            "video_url": "https://www.youtube.com/watch?v=LiQRUHBoF-k&list=TLGG-xd8sCYGiZowNDAzMjAyNg",
-            "video_autoplay": false,
-            "video_loop": true,
-            "alt": "",
-            "custom_width": 49,
-            "custom_width_mobile": 100,
-            "aspect_ratio": "16/9",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "group_BLYwPb",
-        "group_RBP8bK",
-        "video_cwB3iX"
+        "video_rzFKwJ",
+        "group_9HRerj"
       ],
       "custom_css": [
         "@media (max-width: 740px) {h1 {font-size: 30px; } .spacing-style {padding-bottom: 20px; }}"
       ],
       "name": "Constructor",
       "settings": {
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
@@ -1254,6 +1316,7 @@
     "product_list_R4btr9",
     "product_list_b63qqV",
     "section_YYg7zR",
-    "section_N99Rxz"
+    "section_N99Rxz",
+    "section_ptc8ax"
   ]
 }
