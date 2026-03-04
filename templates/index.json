@@ -1479,9 +1479,9 @@
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
-            "type_preset": "rte",
+            "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "font_size": "2.5rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -1502,7 +1502,7 @@
         "text_ThV3n7"
       ],
       "custom_css": [
-        "h2 {font-weight: 600; @media(max-width: 740px) {font-size: 30px; }}"
+        "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}"
       ],
       "name": "t:names.custom_section",
       "settings": {
