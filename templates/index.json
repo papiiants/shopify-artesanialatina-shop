@@ -1443,6 +1443,9 @@
           "block_order": []
         }
       },
+      "custom_css": [
+        "h3 {display: none;}"
+      ],
       "name": "t:names.blog_posts_grid",
       "settings": {
         "blog": "news",
