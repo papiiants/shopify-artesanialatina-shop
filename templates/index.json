@@ -227,6 +227,9 @@
           ]
         }
       },
+      "custom_css": [
+        "@media (min-width: 740px) {h2 {font-size: 30px; }}"
+      ],
       "name": "Te recomendamos",
       "settings": {
         "collection": "barcos",
@@ -406,6 +409,9 @@
           ]
         }
       },
+      "custom_css": [
+        "@media (min-width: 740px) {h2 {font-size: 30px; }}"
+      ],
       "name": "Top ventas",
       "settings": {
         "collection": "top-ventas",
@@ -882,7 +888,8 @@
         "group_DJfCcV"
       ],
       "custom_css": [
-        ".group-block-content {justify-content: space-between}"
+        ".group-block-content {justify-content: space-between;}",
+        "@media (min-width: 740px) {.group-block-content {gap: 20px; } h3 {font-size: 18px; }}"
       ],
       "name": "Categories",
       "settings": {
@@ -1075,6 +1082,9 @@
       "block_order": [
         "group_BLYwPb",
         "video_cwB3iX"
+      ],
+      "custom_css": [
+        "@media(min-width: 740px) {h1 {font-size: 30px; }}"
       ],
       "name": "Constructor",
       "settings": {
