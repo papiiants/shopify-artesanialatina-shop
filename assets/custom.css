@@ -475,5 +475,17 @@ button.swym-wishlist-collections-v2 {
       box-shadow: 0 0 5px 1px #ea88b8;
     }
   }
+}
 
+/* product list */
+
+slideshow-slides {
+  gap: 20px !important;
+}
+
+.product-media {
+  outline: 1px solid #dee2e6;
+  outline-offset: -2px;
+  border-radius: 10px;
+  overflow: hidden;
 }
