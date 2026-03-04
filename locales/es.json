@@ -302,7 +302,8 @@
     "blog_post_title": "Nombre",
     "blog_post_author": "Autor",
     "blog_post_date": "Fecha",
-    "blog_post_description": "Un extracto del contenido de tus artículos del blog"
+    "blog_post_description": "Un extracto del contenido de tus artículos del blog",
+    "blog_post_leer_mas": "Saber más",
   },
   "products": {
     "product": {
