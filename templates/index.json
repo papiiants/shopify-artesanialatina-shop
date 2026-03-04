@@ -1496,10 +1496,31 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "social_links_TDaYDk": {
+          "type": "social-links",
+          "name": "t:names.social_media_links",
+          "settings": {
+            "facebook_url": "https://www.facebook.com/ArtesaniaLatina.net/",
+            "instagram_url": "https://www.instagram.com/artesanialatina_oficial",
+            "youtube_url": "https://www.youtube.com/channel/UCIzu-_drkkuu_5I1-Y7J1wQ",
+            "tiktok_url": "",
+            "twitter_url": "",
+            "threads_url": "",
+            "linkedin_url": "",
+            "bluesky_url": "",
+            "snapchat_url": "",
+            "pinterest_url": "",
+            "tumblr_url": "",
+            "vimeo_url": "",
+            "custom_url": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_ThV3n7"
+        "text_ThV3n7",
+        "social_links_TDaYDk"
       ],
       "custom_css": [
         "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}"
@@ -1511,7 +1532,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "full-width",
