@@ -635,7 +635,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "DESCUBRIR",
-                "link": "shopify://collections/barcos",
+                "link": "shopify://collections/aviones",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
                 "width": "custom",
