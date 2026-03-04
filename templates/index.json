@@ -722,7 +722,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/cat-01.png",
+                "image": "shopify://shop_images/cat-03.png",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
