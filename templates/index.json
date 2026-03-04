@@ -746,7 +746,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "DESCUBRIR",
-                "link": "shopify://collections/barcos",
+                "link": "shopify://collections/herramientas",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
                 "width": "custom",
@@ -833,7 +833,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/cat-01.png",
+                "image": "shopify://shop_images/cat-04.png",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -857,7 +857,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "DESCUBRIR",
-                "link": "shopify://collections/barcos",
+                "link": "shopify://collections/acabados",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
                 "width": "custom",
