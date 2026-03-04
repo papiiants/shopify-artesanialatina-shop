@@ -1524,7 +1524,12 @@
       ],
       "custom_css": [
         "h2 {font-weight: 600; @media (max-width: 740px) {font-size: 30px; }}",
-        ".social-icons__icon-wrapper {width: 25px; height: 25px; padding: 15px; box-sizing: content-box;}"
+        ".social-icons__icon-wrapper {width: 30px; height: 30px; padding: 15px; box-sizing: content-box; border-radius: 5px; background: #ccc;}",
+        ".social-icons__icon-wrapper:hover {opacity: 0.6;}",
+        ".social-icons__icon-wrapper svg {width: 30px; height: 30px; color: #fff;}",
+        ".social-icons__icon-wrapper:first-child {background-color: #273488;}",
+        ".social-icons__icon-wrapper:last-child {background-color: #cd201f;}",
+        ".social-icons__icon-wrapper:nth-child(2) {background-color: #000;}"
       ],
       "name": "Socials",
       "settings": {
