@@ -1034,7 +1034,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Descubre Artesanía Latina",
-                    "link": "shopify://collections/all",
+                    "link": "shopify://pages/sobre-nosotros",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
