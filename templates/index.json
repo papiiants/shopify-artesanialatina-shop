@@ -1241,31 +1241,42 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 56,
-                    "padding-block-end": 56,
+                    "padding-block-end": 40,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
-                "button_DkTYfC": {
-                  "type": "button",
-                  "name": "t:names.button",
+                "text_yTQaqd": {
+                  "type": "text",
+                  "name": "t:names.text",
                   "settings": {
-                    "label": "Descubre Artesanía Latina",
-                    "link": "shopify://collections/all",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
+                    "text": "<p>Artesanía Latina es una marca con más de 50 años de historia especializada en la concepción, fabricación y comercialización de maquetas en kit a escala de madera y metal. Nuestros modelos, están fabricados con materiales de excelente calidad y con maquinaria de última generación para ofrecer una magnífica experiencia de montaje. </p><p>Tanto si ya eres todo un experto modelista como alguien que se pregunta si este hobby es para ti, tenemos el modelo ideal para ti. </p><p>Disponemos además una completa selección de herramientas, accesorios y complementos para llevar a tus maquetas al siguiente nivel </p><p>Si estás buscando un regalo perfecto para ti o tus allegados, tenemos una extensa selección de Ideas para regalar. </p>",
                     "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
                 "text_zLUjEU",
-                "button_DkTYfC"
+                "text_yTQaqd"
               ]
             }
           },
