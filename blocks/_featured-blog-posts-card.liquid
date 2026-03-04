@@ -97,6 +97,13 @@
       <h4>{{ title }}</h4>
       {{ details }}
       {{ description }}
+      <a
+        {% unless onboarding %}
+          href="{{ article.url }}"
+        {% endunless %}
+        class="button-secondary featured-blog-posts-card__button">
+        <span>{{ 'placeholders.blog_post_leer_mas' | t }}</span>
+      </a>
     </div>
   </div>
 </div>
