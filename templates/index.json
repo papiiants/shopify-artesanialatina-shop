@@ -881,6 +881,9 @@
         "group_W4dagj",
         "group_DJfCcV"
       ],
+      "custom_css": [
+        ".group-block-content {justify-content: space-between}"
+      ],
       "name": "Categories",
       "settings": {
         "content_direction": "row",
