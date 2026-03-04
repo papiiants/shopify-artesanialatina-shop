@@ -416,6 +416,8 @@ header-actions {
 }
 
 button.swym-wishlist-collections-v2 {
+  margin-left: -10px;
+
   path {
     stroke: var(--color-acent) !important;
   }
