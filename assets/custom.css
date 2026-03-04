@@ -394,3 +394,35 @@ header-actions {
   }
 }
 
+/* favorites */
+
+#swym-anchor {
+  display: none;
+}
+
+.swym-storefront-layout-header,
+.swym-storefront-layout-login-user-container {
+  background: #fff !important;
+}
+
+.swym-storefront-layout-login-button {
+  background-color: var(--color-acent) !important;
+  border: 1px solid var(--color-acent) !important;
+  border-radius: 25px !important;
+  &:hover {
+    color: var(--color-acent) !important;
+    background-color: #fff !important;
+  }
+}
+
+button.swym-wishlist-collections-v2 {
+  path {
+    stroke: var(--color-acent) !important;
+  }
+  &[aria-label="Agregado. Ver lista de deseos"] {
+    path {
+      fill: var(--color-acent) !important;
+    }
+  }
+}
+
