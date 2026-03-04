@@ -227,7 +227,7 @@
           ]
         }
       },
-      "name": "t:names.products_carousel",
+      "name": "Te recomendamos",
       "settings": {
         "collection": "barcos",
         "layout_type": "carousel",
@@ -406,9 +406,9 @@
           ]
         }
       },
-      "name": "t:names.products_carousel",
+      "name": "Top ventas",
       "settings": {
-        "collection": "barcos",
+        "collection": "top-ventas",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 6,
