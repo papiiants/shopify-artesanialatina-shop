@@ -218,8 +218,7 @@ search-button {
   justify-content: center;
   width: 34px;
   height: 34px;
-  margin-left: auto;
-  margin-right: 15px;
+  margin-inline: auto;
   border-radius: 50%;
   border: 1px solid #ffffff;
 
