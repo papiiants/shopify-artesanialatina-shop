@@ -490,3 +490,21 @@ slideshow-slides {
   border-radius: 10px;
   overflow: hidden;
 }
+
+/* blog post grid */
+
+.featured-blog-posts-card__inner {
+
+}
+
+.featured-blog-posts-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  background-color: #f4f6ff;
+  border-radius: 0 0 20px 20px;
+}
+.featured-blog-posts-card__button {
+  margin-left: 20px;
+}
