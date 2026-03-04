@@ -426,3 +426,54 @@ button.swym-wishlist-collections-v2 {
   }
 }
 
+/* product list metafield */
+
+.product-card__difficulty {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  width: max-content;
+  padding: 0 10px 0 25px;
+  background: rgba(255, 255, 255, .6);
+  border: 1px solid;
+  border-radius: 20px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    translate: 0 -50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px;
+  }
+
+  &[data-difficulty="Iniciación"] {
+    &::before {
+      background-color: #60D669;
+      box-shadow: 0 0 5px 1px #60D669;
+    }
+  }
+  &[data-difficulty="Avanzado"] {
+    &::before {
+      background-color: #FFD53F;
+      box-shadow: 0 0 5px 1px #FFD53F;
+    }
+  }
+  &[data-difficulty="Experto"] {
+    &::before {
+      background-color: #F98743;
+      box-shadow: 0 0 5px 1px #F98743;
+    }
+  }
+  &[data-difficulty="Medio"] {
+    &::before {
+      background-color: #ea88b8;
+      box-shadow: 0 0 5px 1px #ea88b8;
+    }
+  }
+
+}
