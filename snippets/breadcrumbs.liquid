@@ -1,0 +1,78 @@
+{% unless template == 'index' %}
+    <nav class="breadcrumb" role="navigation" aria-label="Навигация по сайту">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/" title="Главная">
+                    <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            {% if template contains 'product' %}
+                {% if collection %}
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span aria-hidden="true"> / </span>
+                        <a itemprop="item" href="{{ collection.url }}" title="{{ collection.title }}">
+                            <span itemprop="name">{{ collection.title }}</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                {% endif %}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ product.title }}</span>
+                    <meta itemprop="position" content="{% if collection %}3{% else %}2{% endif %}" />
+                </li>
+
+            {% elsif template contains 'collection' and collection.handle %}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ collection.title }}</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+
+            {% elsif template == 'blog' %}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ blog.title }}</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+
+            {% elsif template == 'article' %}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <a itemprop="item" href="{{ blog.url }}" title="{{ blog.title }}">
+                        <span itemprop="name">{{ blog.title }}</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ article.title }}</span>
+                    <meta itemprop="position" content="3" />
+                </li>
+
+            {% elsif template == 'page' %}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ page.title }}</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+
+            {% elsif template == 'search' %}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">Поиск: {{ search.terms | escape }}</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+
+            {% else %}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ page_title }}</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            {% endif %}
+        </ol>
+    </nav>
+{% endunless %}
