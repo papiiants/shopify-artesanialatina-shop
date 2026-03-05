@@ -1,0 +1,82 @@
+{%- unless template == 'index' -%}
+
+    <nav class="breadcrumb" role="navigation" aria-label="Навигация по сайту">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+
+            <!-- Всегда первая — Главная -->
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/" title="Главная">
+                    <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            {%- assign pos = 2 -%}
+
+            {%- if template contains 'product' -%}
+                {%- if product.collections.size > 0 -%}
+                    {%- assign first_collection = product.collections[0] -%}
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span aria-hidden="true"> / </span>
+                        <a itemprop="item" href="{{ first_collection.url }}" title="{{ first_collection.title | escape }}">
+                            <span itemprop="name">{{ first_collection.title }}</span>
+                        </a>
+                        <meta itemprop="position" content="{{ pos }}" />
+                    </li>
+                    {%- assign pos = pos | plus: 1 -%}
+                {%- endif -%}
+
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ product.title | escape }}</span>
+                    <meta itemprop="position" content="{{ pos }}" />
+                </li>
+
+            {%- elsif template contains 'collection' and collection.handle -%}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ collection.title }}</span>
+                    <meta itemprop="position" content="{{ pos }}" />
+                </li>
+
+            {%- elsif template == 'page' -%}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ page.title }}</span>
+                    <meta itemprop="position" content="{{ pos }}" />
+                </li>
+
+            {%- elsif template == 'blog' -%}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ blog.title }}</span>
+                    <meta itemprop="position" content="{{ pos }}" />
+                </li>
+
+            {%- elsif template == 'article' -%}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <a itemprop="item" href="{{ blog.url }}">
+                        <span itemprop="name">{{ blog.title }}</span>
+                    </a>
+                    <meta itemprop="position" content="{{ pos }}" />
+                </li>
+                {%- assign pos = pos | plus: 1 -%}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ article.title }}</span>
+                    <meta itemprop="position" content="{{ pos }}" />
+                </li>
+
+            {%- else -%}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span aria-hidden="true"> / </span>
+                    <span itemprop="name">{{ page_title }}</span>
+                    <meta itemprop="position" content="{{ pos }}" />
+                </li>
+            {%- endif -%}
+
+        </ol>
+    </nav>
+
+{%- endunless -%}
