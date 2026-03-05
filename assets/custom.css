@@ -603,3 +603,7 @@ add-to-cart-component {
     }
   }
 }
+
+button.cbb-frequently-bought-add-button.button {
+  border-radius: 40px !important;
+}
