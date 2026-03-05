@@ -613,36 +613,45 @@
               },
               "blocks": {}
             },
-            "text_9dGD4x": {
-              "type": "text",
-              "name": "t:names.text",
+            "ai_gen_block_21623cd_zJ8Lre": {
+              "type": "ai_gen_block_21623cd",
               "settings": {
-                "text": "<ul><li>Visa</li><li>MasterCard</li><li>Bizum</li><li>Paypal</li><li>Discover</li><li>Klarna</li><li>Paygold</li><li>Scalapay</li></ul>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "desktop_width_percent": 100,
+                "padding": 0,
+                "background_color": "#f4f6ff",
+                "border_radius": 0,
+                "icon_size": 30,
+                "icon_padding": 0,
+                "icon_background": "#f4f6ff",
+                "icon_border_width": 0,
+                "icon_border_color": "#e6e6e6",
+                "icon_border_radius": 0,
+                "text_size": 14,
+                "text_color": "#273488",
+                "text_weight": "400",
+                "visa_enabled": true,
+                "visa_icon": "shopify://shop_images/icon-08.png",
+                "mastercard_enabled": true,
+                "mastercard_icon": "shopify://shop_images/icon-07.png",
+                "bizum_enabled": true,
+                "bizum_icon": "shopify://shop_images/icon-06.png",
+                "paypal_enabled": true,
+                "paypal_icon": "shopify://shop_images/icon-05.png",
+                "discover_enabled": true,
+                "discover_icon": "shopify://shop_images/icon-04.png",
+                "klarna_enabled": true,
+                "klarna_icon": "shopify://shop_images/icon-03.png",
+                "paygold_enabled": true,
+                "paygold_icon": "shopify://shop_images/icon-02.png",
+                "scalapay_enabled": true,
+                "scalapay_icon": "shopify://shop_images/icon-01.png"
               },
               "blocks": {}
             }
           },
           "block_order": [
             "text_RCHzdQ",
-            "text_9dGD4x"
+            "ai_gen_block_21623cd_zJ8Lre"
           ]
         }
       },

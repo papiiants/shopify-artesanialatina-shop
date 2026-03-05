@@ -1,0 +1,553 @@
+{% doc %}
+  @prompt
+    Сгенерируй мне блок в котором будет выводится слудующий список платежных методов:
+    Visa
+    MasterCard
+    Bizum
+    Paypal
+    Discover
+    Klarna
+    Paygold
+    Scalapay
+    Для каждого метода что бы была возможность добавить подготовленную иконку., переделай это будет иметь вид:
+    элемент списка ul расположение column, gap: 5px, содержимое элемента горизонтальное gap: 5px;:
+    иконка платежной системы + название платежной системы предоставленное выше.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-payment-methods-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-payment-methods-list-{{ ai_gen_id }} {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .ai-payment-method-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .ai-payment-method-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: {{ block.settings.icon_background }};
+    border: {{ block.settings.icon_border_width }}px solid {{ block.settings.icon_border_color }};
+    border-radius: {{ block.settings.icon_border_radius }}px;
+    padding: {{ block.settings.icon_padding }}px;
+  }
+
+  .ai-payment-method-icon-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ai-payment-method-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: {{ block.settings.icon_border_radius }}px;
+  }
+
+  .ai-payment-method-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-payment-method-name-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    font-weight: {{ block.settings.text_weight }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-payment-methods-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<payment-methods-{{ ai_gen_id }}
+  class="ai-payment-methods-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <ul class="ai-payment-methods-list-{{ ai_gen_id }}">
+    {% if block.settings.visa_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.visa_icon %}
+            <img
+              src="{{ block.settings.visa_icon | image_url: width: 100 }}"
+              alt="Visa"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">Visa</span>
+      </li>
+    {% endif %}
+
+    {% if block.settings.mastercard_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.mastercard_icon %}
+            <img
+              src="{{ block.settings.mastercard_icon | image_url: width: 100 }}"
+              alt="MasterCard"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">MasterCard</span>
+      </li>
+    {% endif %}
+
+    {% if block.settings.bizum_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.bizum_icon %}
+            <img
+              src="{{ block.settings.bizum_icon | image_url: width: 100 }}"
+              alt="Bizum"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">Bizum</span>
+      </li>
+    {% endif %}
+
+    {% if block.settings.paypal_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.paypal_icon %}
+            <img
+              src="{{ block.settings.paypal_icon | image_url: width: 100 }}"
+              alt="PayPal"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">PayPal</span>
+      </li>
+    {% endif %}
+
+    {% if block.settings.discover_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.discover_icon %}
+            <img
+              src="{{ block.settings.discover_icon | image_url: width: 100 }}"
+              alt="Discover"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">Discover</span>
+      </li>
+    {% endif %}
+
+    {% if block.settings.klarna_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.klarna_icon %}
+            <img
+              src="{{ block.settings.klarna_icon | image_url: width: 100 }}"
+              alt="Klarna"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">Klarna</span>
+      </li>
+    {% endif %}
+
+    {% if block.settings.paygold_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.paygold_icon %}
+            <img
+              src="{{ block.settings.paygold_icon | image_url: width: 100 }}"
+              alt="Paygold"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">Paygold</span>
+      </li>
+    {% endif %}
+
+    {% if block.settings.scalapay_enabled %}
+      <li class="ai-payment-method-item-{{ ai_gen_id }}">
+        <div class="ai-payment-method-icon-{{ ai_gen_id }}">
+          {% if block.settings.scalapay_icon %}
+            <img
+              src="{{ block.settings.scalapay_icon | image_url: width: 100 }}"
+              alt="Scalapay"
+              loading="lazy"
+              width="100"
+              height="100"
+            >
+          {% else %}
+            <div class="ai-payment-method-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <span class="ai-payment-method-name-{{ ai_gen_id }}">Scalapay</span>
+      </li>
+    {% endif %}
+  </ul>
+</payment-methods-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class PaymentMethods{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('payment-methods-{{ ai_gen_id }}', PaymentMethods{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Payment methods",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Icon style"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "icon_padding",
+      "label": "Icon padding",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "icon_background",
+      "label": "Icon background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "icon_border_width",
+      "label": "Icon border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "icon_border_color",
+      "label": "Icon border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "range",
+      "id": "icon_border_radius",
+      "label": "Icon border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Text style"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Text weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semibold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "header",
+      "content": "Visa"
+    },
+    {
+      "type": "checkbox",
+      "id": "visa_enabled",
+      "label": "Show Visa",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "visa_icon",
+      "label": "Visa icon"
+    },
+    {
+      "type": "header",
+      "content": "MasterCard"
+    },
+    {
+      "type": "checkbox",
+      "id": "mastercard_enabled",
+      "label": "Show MasterCard",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "mastercard_icon",
+      "label": "MasterCard icon"
+    },
+    {
+      "type": "header",
+      "content": "Bizum"
+    },
+    {
+      "type": "checkbox",
+      "id": "bizum_enabled",
+      "label": "Show Bizum",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "bizum_icon",
+      "label": "Bizum icon"
+    },
+    {
+      "type": "header",
+      "content": "PayPal"
+    },
+    {
+      "type": "checkbox",
+      "id": "paypal_enabled",
+      "label": "Show PayPal",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "paypal_icon",
+      "label": "PayPal icon"
+    },
+    {
+      "type": "header",
+      "content": "Discover"
+    },
+    {
+      "type": "checkbox",
+      "id": "discover_enabled",
+      "label": "Show Discover",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "discover_icon",
+      "label": "Discover icon"
+    },
+    {
+      "type": "header",
+      "content": "Klarna"
+    },
+    {
+      "type": "checkbox",
+      "id": "klarna_enabled",
+      "label": "Show Klarna",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "klarna_icon",
+      "label": "Klarna icon"
+    },
+    {
+      "type": "header",
+      "content": "Paygold"
+    },
+    {
+      "type": "checkbox",
+      "id": "paygold_enabled",
+      "label": "Show Paygold",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "paygold_icon",
+      "label": "Paygold icon"
+    },
+    {
+      "type": "header",
+      "content": "Scalapay"
+    },
+    {
+      "type": "checkbox",
+      "id": "scalapay_enabled",
+      "label": "Show Scalapay",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "scalapay_icon",
+      "label": "Scalapay icon"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Payment methods"
+    }
+  ]
+}
+{% endschema %}
